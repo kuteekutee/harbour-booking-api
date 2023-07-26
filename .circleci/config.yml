@@ -44,6 +44,7 @@ jobs:
             docker login -u ${DOCKER_LOGIN} -p ${DOCKER_PASSWORD}
             docker build -t ${DOCKER_LOGIN}/harbour-booking-api:${CIRCLE_SHA1} .
             docker push ${DOCKER_LOGIN}/harbour-booking-api:${CIRCLE_SHA1}
+            
 
   # Deploy to Heroku
   deploy_to_heroku:
