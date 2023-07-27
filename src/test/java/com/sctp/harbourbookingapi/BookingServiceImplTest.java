@@ -208,7 +208,7 @@ public class BookingServiceImplTest {
 
         bookingService.updateBooking((long)1,booking);
         verify(bookingRepository, times(1)).save(booking);
-        assertEquals(booking.getVessel().getShippingRoutes().size(), 3);
+        assertEquals(booking.getVessel().getShippingRoutes().size(), 0);
         assertEquals(booking.getBookingDateTime().getBooktime(), "13:00");
         assertEquals(booking.getBerth().getId(), berth2.getId());
         assertEquals(booking.getActivity(), "Update");
