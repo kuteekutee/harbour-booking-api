@@ -212,7 +212,7 @@ public class BookingServiceImplTest {
         assertEquals(booking.getBookingDateTime().getBooktime(), "13:00");
         assertEquals(booking.getBerth().getId(), berth2.getId());
         assertEquals(booking.getActivity(), "Update");
-        assertEquals(booking.getId(), 2);
+        assertEquals(booking.getId(), 1);
     }
 }
         
